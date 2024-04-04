@@ -71,7 +71,7 @@ function displayTentativas(tentativa) {
 }
 
 function msg(mensagem) {
-    avisos.innerHTML = `<h2>${mensagem}</h2>`
+    avisos.innerHTML = `<h1>${mensagem}</h1>`
 }
 
 function fimJogo() {
@@ -85,16 +85,16 @@ function fimJogo() {
 }
 
 function iniciarJogo() {
-    const botaoIniciar = document.querySelector("#iniciarJogada")
-    botaoIniciar.addEventListener("click", function(){
+    const botaoIniciar = document.querySelector('#iniciarJogada')
+    botaoIniciar.addEventListener('click', function(){
         randomNumber = parseInt(Math.random() * 100 + 1)
         numerosJogados = []
         minhasJogadas = 1
-        jogadaAnterior.innerHTML = ""   
-        avisos.innerHTML = ""
+        jogadaAnterior.innerHTML = ''   
+        avisos.innerHTML = ''
         jogadasRestantes.innerHTML = `${7 - minhasJogadas}`
-        jogada.removeAttribute("disabled")
-        submit.removeAttribute("disabled")
+        jogada.removeAttribute('disabled', '')
+        submit.removeAttribute('disabled', '')
         recomecar.removeChild(p)
         playGame = true
     })
