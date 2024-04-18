@@ -93,8 +93,8 @@ function iniciarJogo() {
         jogadaAnterior.innerHTML = ''   
         avisos.innerHTML = ''
         jogadasRestantes.innerHTML = `${7 - minhasJogadas}`
-        jogada.removeAttribute('disabled', '')
-        submit.removeAttribute('disabled', '')
+        jogada.setAttribute('disabled', '')
+        submit.setAttribute('disabled', '')
         recomecar.removeChild(p)
         playGame = true
     })
